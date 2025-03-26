@@ -1,0 +1,31 @@
+.logo {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 140px;
+  height: 80px;
+}
+.logo p {
+  font-family: "Sansation", sans-serif;
+  font-weight: 600;
+  font-size: 31px;
+  color: #08c60a;
+}
+.logo p span {
+  color: #044301;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    flex: 0.5;
+  }
+  .logo img {
+    width: 80px;
+    height: 50px;
+  }
+  .logo p {
+    font-size: 18px;
+  }
+}

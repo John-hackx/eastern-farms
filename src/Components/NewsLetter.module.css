@@ -1,0 +1,87 @@
+.newsletter {
+  height: 25vh;
+  background-color: #057827;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+}
+.left {
+  flex: 0.4;
+  /* border: 1px solid red; */
+  padding-left: 200px;
+}
+.left h3 {
+  margin-top: 10px;
+  max-width: 80%;
+  color: #ffff;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.left p {
+  margin-top: 10px;
+  color: #ffff;
+  font-weight: 100;
+}
+
+.right {
+  /* border: 1px solid blue; */
+  flex: 0.6;
+  display: flex;
+  align-items: center;
+}
+.right input {
+  width: 60%;
+  padding: 12px;
+  border-radius: 10px;
+  height: 35px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+}
+.right button {
+  width: 150px;
+  margin-left: 2px;
+  height: 37px;
+  border: none;
+  background-color: #ff6701;
+  color: #ffff;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter {
+    margin-top: -180px;
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    /* border: 1px solid red; */
+    width: 100%;
+    padding-left: 0;
+    margin-top: -10px;
+  }
+  .left h3 {
+    /* margin-top: -5px; */
+    font-size: 16px;
+    max-width: 100%;
+    /* margin-left: -50px; */
+    /* border: 1px solid yellow; */
+  }
+  .left p {
+    font-size: 14px;
+    width: 100%;
+    /* border: 1px solid black; */
+  }
+  .right input {
+    position: relative;
+    width: 100%;
+  }
+  .right button {
+    position: absolute;
+    height: 35px;
+    border-radius: 10px;
+    right: 10px;
+    width: 30%;
+    font-size: 16px;
+  }
+}

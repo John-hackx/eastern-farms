@@ -1,0 +1,154 @@
+.heroSection {
+  height: 85vh;
+  width: 100%;
+  /* border: 1px solid red; */
+  margin-top: 5px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+} */
+
+.video {
+  width: 100%;
+  position: absolute;
+}
+.dim {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.49;
+}
+.heroContent {
+  color: #ffff;
+  position: absolute;
+  /* border: 1px solid red; */
+  height: 80%;
+  width: 50%;
+}
+.heroContent h2 {
+  font-size: 3.5rem;
+  margin-left: 40px;
+}
+.heroContent p {
+  overflow: break-word;
+  text-align: center;
+  margin-top: 60px;
+  line-height: 1.5rem;
+  font-size: 20px;
+  font-weight: 200;
+}
+.heroContent button {
+  margin-top: 100px;
+  width: 40%;
+  height: 45px;
+  margin-left: 32%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #ffff;
+  color: #ffff;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif !important;
+  font-size: 18px;
+  position: relative;
+  /* align-items: center; */
+}
+.heroContent button span {
+  margin-left: 5px;
+  position: absolute;
+}
+
+.prevBtn {
+  position: absolute;
+  color: #ffff;
+  left: 10px;
+  background-color: #024917;
+  width: 40px;
+  height: 40px;
+}
+.nextBtn {
+  position: absolute;
+  color: #ffff;
+  right: 10px;
+  background-color: #024917;
+  width: 40px;
+  height: 40px;
+}
+.nextBtn svg {
+  width: 40px !important;
+  height: 40px !important;
+}
+.prevBtn svg {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .heroSection {
+    height: 30vh;
+  }
+  .heroContent {
+    width: 80%;
+  }
+  .heroContent h2 {
+    font-size: 23px;
+    margin-left: 20px;
+    margin-top: -7px;
+  }
+  .heroContent p {
+    margin-top: 10px;
+    font-size: 10px;
+    line-height: 18px;
+  }
+  .heroContent button {
+    margin-top: 10px;
+    width: 55%;
+    height: 30px;
+    margin-left: 25%;
+    font-size: 12px;
+  }
+  .heroContent button span {
+    margin-left: 5px;
+    margin-top: -3px;
+  }
+  .heroContent button svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .prevBtn {
+    left: 5px;
+    width: 30px;
+    height: 30px;
+  }
+  .nextBtn {
+    right: 5px;
+    width: 30px;
+    height: 30px;
+  }
+  .nextBtn svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .prevBtn svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 500px) {
+  .heroSection {
+    height: 25vh;
+  }
+}

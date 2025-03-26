@@ -1,0 +1,116 @@
+.aboutSection {
+  /* border: 1px solid red; */
+  height: 85vh;
+  width: 100%;
+  background-color: #ffff;
+  display: grid;
+  grid-template-columns: 40% 50%;
+  justify-content: center;
+}
+/* .aboutLeft {
+  border: 1px solid green;`
+} */
+
+.imageCard {
+  position: relative;
+  border: 1px solid rgb(199, 199, 199);
+  width: 70%;
+  height: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.imageCard img {
+  width: 95%;
+  height: 100%;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.aboutRight {
+  /* border: 1px solid blue; */
+  padding: 20px;
+}
+.aboutRight h2 {
+  font-family: "MuseoModerno", sans-serif;
+  font-size: 40px;
+  color: #044301;
+}
+.aboutRight h3 {
+  font-family: "MuseoModerno", sans-serif;
+  font-size: 40px;
+  color: #087c0a;
+}
+.aboutRight p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  width: 80%;
+  line-height: 1.5;
+  color: rgb(0, 0, 0, 0.7);
+  overflow: break-word;
+  font-size: 17px;
+  margin-top: 50px;
+}
+.aboutRight button {
+  width: 40%;
+  height: 45px;
+  color: #ffff;
+  background-color: #087c0a;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-top: 60px;
+}
+.aboutRight button span {
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutSection {
+    display: flex;
+    /* grid-template-columns: 100%; */
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .aboutRight {
+    padding: 20px;
+    text-align: center;
+  }
+  .aboutRight h2 {
+    font-size: 30px;
+  }
+  .aboutRight h3 {
+    font-size: 30px;
+  }
+  .aboutRight p {
+    width: 100%;
+    font-size: 15px;
+  }
+  .aboutRight button {
+    width: 60%;
+    height: 40px;
+    font-size: 15px;
+  }
+  .imageCard {
+    width: 90%;
+    height: 400px;
+    display: none;
+    border-radius: 10px;
+    border: 3px solid rgb(166, 231, 166);
+  }
+  .imageCard img {
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    left: 8px;
+    top: 10px;
+  }
+  .aboutLearnMore {
+    margin: 0 auto;
+  }
+}
