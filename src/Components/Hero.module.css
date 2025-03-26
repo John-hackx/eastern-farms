@@ -147,6 +147,13 @@
   }
 }
 
+.heroContent button:hover {
+  cursor: pointer;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+  background-color: #ff8239;
+  transition: all 0.3s ease;
+}
+
 @media screen and (min-width: 480px) and (max-width: 500px) {
   .heroSection {
     height: 25vh;

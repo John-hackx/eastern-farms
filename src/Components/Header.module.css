@@ -129,4 +129,7 @@
   .callUs {
     display: none;
   }
+  .showIcon:hover {
+    cursor: pointer;
+  }
 }

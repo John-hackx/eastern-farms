@@ -6,14 +6,22 @@ import ServicesSection from "../Components/ServicesSection";
 import TopProducts from "../Components/TopProducts";
 import NewsLetter from "../Components/NewsLetter";
 import Footer from "../Components/Footer";
-function HomePage() {
+import { useRef } from "react";
+
+function HomePage({ windowWidth }) {
+  const servicesRef = useRef(null);
+
+  const scrollToServices = () => {
+    servicesRef.current?.scrollIntoView({ behaviour: "smooth" });
+  };
+
   return (
     <div>
-      <Header />
-      <Hero />
+      <Header windowWidth={windowWidth} />
+      <Hero scrollToServices={scrollToServices} />
       <About />
       <TopProducts />
-      <ServicesSection />
+      <ServicesSection servicesRef={servicesRef} />
       <NeedHelp />
       <NewsLetter />
       <Footer />

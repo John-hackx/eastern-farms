@@ -1,0 +1,23 @@
+.menu {
+  position: absolute;
+  width: 95%;
+  border: 3px solid rgb(218, 216, 213);
+  z-index: 1;
+  margin: 0 auto;
+  height: 190px;
+  background-color: rgb(240, 248, 255);
+  top: 115%;
+  left: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  margin-top: 12px;
+}
+.menu ul li {
+  list-style: none;
+}

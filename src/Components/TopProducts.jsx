@@ -23,7 +23,12 @@ function TopProducts() {
         <p className={styles.topTitle}>Our Top Products</p>
         <div className={styles.productsContainer}>
           {productImages.map((product, index) => (
-            <Product image={product.image} name={product.name} index={index} />
+            <Product
+              image={product.image}
+              name={product.name}
+              key={product.name}
+              index={index}
+            />
           ))}
         </div>
       </div>

@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import Service from "./Service";
 import styles from "./ServicesSection.module.css";
 import serviceImage1 from "../assets/images/service-1.jpg";
@@ -32,16 +34,24 @@ const services = [
   },
 ];
 
-function ServicesSection() {
+function ServicesSection({ servicesRef }) {
   return (
-    <div className={styles.servicesSection}>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true }}
+      ref={servicesRef}
+      id="services"
+      className={styles.servicesSection}
+    >
       <p className={styles.serviceTitle}>Services We Provide</p>
       <div className={styles.servicesContainer}>
         {services.map((service, index) => (
           <Service service={service} index={index} key={service.name} />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

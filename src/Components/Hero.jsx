@@ -1,7 +1,8 @@
 import styles from "./Hero.module.css";
 import heroVideo from "../assets/images/hero-video-4.mp4";
+import { Link } from "react-router-dom";
 
-function Hero() {
+function Hero({ scrollToServices }) {
   return (
     <div className={styles.heroSection}>
       <video
@@ -43,7 +44,8 @@ function Hero() {
           sustainability, and efficiency. From smart farming technologies to
           eco-friendly practices, we help farmers cultivate success.
         </p>
-        <button>
+
+        <button onClick={scrollToServices}>
           Explore Our Services{" "}
           <span>
             <svg
