@@ -1,5 +1,6 @@
 import styles from "./About.module.css";
 import aboutImage from "../assets/images/about-image3.jpg";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -19,20 +20,22 @@ function About() {
           providing our customers with the best possible experience, from start
           to finish.
         </p>
-        <button className={styles.aboutLearnMore}>
-          Learn More{" "}
-          <span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="24px"
-              viewBox="0 -960 960 960"
-              width="24px"
-              fill="currentColor"
-            >
-              <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
-            </svg>
-          </span>
-        </button>
+        <Link to="/about">
+          <button className={styles.aboutLearnMore}>
+            Learn More{" "}
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="currentColor"
+              >
+                <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z" />
+              </svg>
+            </span>
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -1,0 +1,62 @@
+.topBar {
+  display: flex;
+  /* border: 1px solid red; */
+  height: 3.5vh;
+  background-color: #fd5521;
+  width: 100%;
+  align-items: center;
+  color: #ffff;
+}
+
+.emailSection {
+  display: flex;
+  flex: 0.5;
+  align-items: center;
+  /* border: 1px solid red; */
+  height: 100%;
+}
+.emailSection svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 12px;
+}
+.emailSection p {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.phoneSection {
+  display: flex;
+  flex: 0.5;
+  align-items: center;
+  /* border: 1px solid blue; */
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.phoneSection svg {
+  width: 18px;
+  height: 18px;
+}
+.phoneSection p {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-right: 12px;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .showIcon {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .showIcon svg {
+    width: 27px;
+    height: 27px;
+    font-size: 25px;
+  }
+}

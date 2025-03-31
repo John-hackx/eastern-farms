@@ -70,6 +70,22 @@
   margin-left: 5px;
 }
 
+.aboutLearnMore:hover {
+  cursor: pointer;
+  border: 1px solid #8cee8d;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: #087c0a;
+}
+.aboutLearnMore:active {
+  color: #046106;
+  background-color: #8cee8d;
+}
+
+.aboutRight a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
   .aboutSection {
     display: flex;

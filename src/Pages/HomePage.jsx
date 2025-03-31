@@ -7,6 +7,7 @@ import TopProducts from "../Components/TopProducts";
 import NewsLetter from "../Components/NewsLetter";
 import Footer from "../Components/Footer";
 import { useRef } from "react";
+import HeaderTopBar from "../Components/HeaderTopBar";
 
 function HomePage({ windowWidth }) {
   const servicesRef = useRef(null);
@@ -17,6 +18,7 @@ function HomePage({ windowWidth }) {
 
   return (
     <div>
+      <HeaderTopBar />
       <Header windowWidth={windowWidth} />
       <Hero scrollToServices={scrollToServices} />
       <About />

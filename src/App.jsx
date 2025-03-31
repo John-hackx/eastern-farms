@@ -25,10 +25,16 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage windowWidth={windowWidth} />} />
-        <Route path="blog" element={<BlogPage />} />
-        <Route path="contact" element={<ContactPage />} />
-        <Route path="projects" element={<ProjectsPage />} />
-        <Route path="about" element={<AboutPage />} />
+        <Route path="blog" element={<BlogPage windowWidth={windowWidth} />} />
+        <Route
+          path="contact"
+          element={<ContactPage windowWidth={windowWidth} />}
+        />
+        <Route
+          path="projects"
+          element={<ProjectsPage windowWidth={windowWidth} />}
+        />
+        <Route path="about" element={<AboutPage windowWidth={windowWidth} />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>

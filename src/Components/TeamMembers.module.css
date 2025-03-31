@@ -1,0 +1,60 @@
+.teamMembers {
+  /* border: 1px solid red; */
+  height: 80vh;
+  margin: 0 auto;
+  width: 94%;
+  /* padding-left: 90px;
+  padding-right: 90px; */
+}
+
+.teamHeader {
+  border-left: 1px solid yellow;
+  /* height: 120px; */
+  border-left: 2px solid #057827;
+  padding-left: 20px;
+}
+
+.teamHeader p {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  color: #058e07;
+}
+.teamHeader h3 {
+  width: 30%;
+  font-size: 25px;
+  color: #044301;
+}
+
+.teamContainer {
+  /* border: 1px solid green; */
+  width: 100%;
+  height: 72%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.memberCard {
+  flex: 0.24;
+  height: 100%;
+  border: 1px solid rgb(187, 187, 187);
+  display: flex;
+  flex-direction: column;
+}
+.memberImage {
+  flex: 0.6;
+}
+.memberImage img {
+  height: 100%;
+  width: 100%;
+  /* object-fit: cover; */
+  overflow: hidden;
+}
+
+.memberDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  flex: 0.4;
+}

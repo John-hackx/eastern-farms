@@ -1,14 +1,26 @@
 import styles from "./NeedHelp.module.css";
 import helpImage from "../assets/images/service-2-new.jpg";
+import { Link } from "react-router-dom";
+
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
+
+const MDiv = motion.div;
 
 function NeedHelp() {
   return (
-    <div className={styles.needHelp}>
+    <MDiv
+      variants={fadeIn("up", 0.2)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.7 }}
+      className={styles.needHelp}
+    >
       <div className={styles.subContainer}>
         <div className={styles.left}>
-          <div className={styles.helpTitle}>
+          <MDiv className={styles.helpTitle}>
             <p>Need any help?</p>
-          </div>
+          </MDiv>
           <div className={styles.helpText}>
             <p>
               Have questions or need assistance? Our team is here to help! Get
@@ -52,14 +64,16 @@ function NeedHelp() {
             <p>easternfarms16@gmail.com</p>
           </div>
           <div className={styles.button}>
-            <button>Drop a Message</button>
+            <Link to="/contact">
+              <button>Drop a Message</button>
+            </Link>
           </div>
         </div>
         <div className={styles.right}>
           <img src={helpImage} alt="Need Help" />
         </div>
       </div>
-    </div>
+    </MDiv>
   );
 }
 
