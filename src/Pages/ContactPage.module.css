@@ -3,7 +3,7 @@
   width: 70%;
   margin: 0 auto;
   margin-top: 40px;
-  height: 82vh;
+  height: 87vh;
   display: flex;
   border-radius: 18px;
 }
@@ -220,6 +220,7 @@ form textarea {
   border: 1px solid #dfdddd;
   outline: none;
   font-size: 16px;
+  resize: none;
   color: #dfdddd;
 }
 form textarea::placeholder {
@@ -249,4 +250,78 @@ form button:hover {
   background-color: #56f559;
   color: rgb(97, 2, 18);
   cursor: pointer;
+}
+
+/* mobile view */
+
+@media screen and (max-width: 768px) {
+  .contactContainer {
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 60%;
+    border: none;
+    height: 100vh;
+  }
+  .left {
+    margin-top: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .getInTouchHeader p {
+    font-size: 23px;
+    text-align: center;
+  }
+  .getInTouchHeader span {
+    left: 42%;
+  }
+  .getInTouchText {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  .getInTouchContact {
+    padding-top: 20px;
+    padding-left: 13px;
+    gap: 10px;
+  }
+  .getInTouchContact svg {
+    width: 33px;
+    height: 33px;
+  }
+  .phoneDetailsTitle,
+  .emailDetailsTitle,
+  .locationDetailsTitle {
+    font-size: 15px !important;
+  }
+  .phoneDetails p,
+  .emailDetails p,
+  .locationDetails p {
+    font-size: 14px;
+  }
+
+  .getInTouchSocial {
+    margin-top: 20px;
+    /* border: 1px solid red; */
+    padding-left: 11px;
+  }
+  .getInTouchSocial img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .right {
+    border-radius: 10px;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    /* height: 110%; */
+  }
+  .contactFormContainer {
+    width: 100%;
+  }
+  form button {
+    margin-left: 33%;
+  }
 }
