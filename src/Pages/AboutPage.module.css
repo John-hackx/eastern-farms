@@ -1,6 +1,6 @@
 .aboutContainer {
   /* border: 1px solid red; */
-  height: 95vh;
+  height: 120vh;
   margin-top: 20px;
   margin-bottom: 90px;
   padding-top: 20px;
@@ -18,7 +18,7 @@
 }
 .aboutBox {
   /* border: 1px solid orange; */
-  flex: 0.55;
+  flex: 0.5;
   display: flex;
 }
 .aboutImage {
@@ -121,4 +121,59 @@
   /* border: 1px solid yellow; */
   flex: 0.25;
   /* padding: 10px; */
+}
+
+@media screen and (max-width: 768px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .aboutBox {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .aboutImage {
+    padding: 10px;
+  }
+  .aboutImage img {
+    margin-top: 20px;
+  }
+
+  .contentHeader p {
+    font-size: 13px;
+  }
+
+  .contentHeader h3 {
+    width: 100%;
+    font-size: 20px;
+  }
+  .contentText {
+    display: flex;
+    justify-content: center;
+  }
+  .contentText p {
+    text-align: left;
+  }
+
+  .missionBox {
+    margin-top: 20px;
+    border-radius: 0;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+  .missionHeader p {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .missionText p {
+    text-align: left;
+  }
+  .right {
+    margin-top: 30px;
+    /* height: 120%; */
+  }
 }

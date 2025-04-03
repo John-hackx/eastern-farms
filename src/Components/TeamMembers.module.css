@@ -58,3 +58,33 @@
   padding-top: 20px;
   flex: 0.4;
 }
+
+@media screen and (max-width: 768px) {
+  .teamMembers {
+    margin-top: 285%;
+    margin-bottom: 280%;
+  }
+  .teamHeader p {
+    font-size: 13px;
+  }
+  .teamHeader h3 {
+    width: 100%;
+  }
+  .teamContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .memberImage {
+    /* border: 1px solid red; */
+    flex: 0.5;
+    max-height: 65%;
+  }
+  .memberImage img {
+    max-height: 100%;
+  }
+  .memberDescription {
+    flex: 0.5;
+    /* border: 1px solid green; */
+  }
+}
