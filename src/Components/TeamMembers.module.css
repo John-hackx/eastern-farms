@@ -62,7 +62,7 @@
 @media screen and (max-width: 768px) {
   .teamMembers {
     margin-top: 285%;
-    margin-bottom: 280%;
+    margin-bottom: 290%;
   }
   .teamHeader p {
     font-size: 13px;
@@ -73,7 +73,8 @@
   .teamContainer {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    /* gap: 40px; */
+    height: 245%;
   }
   .memberImage {
     /* border: 1px solid red; */
