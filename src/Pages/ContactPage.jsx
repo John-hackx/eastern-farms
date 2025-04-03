@@ -5,8 +5,30 @@ import facebookLogo from "../assets/images/facebook.png";
 import twitterLogo from "../assets/images/twitter.png";
 import youtubeLogo from "../assets/images/youtube.png";
 import linkedinLogo from "../assets/images/linkedin.png";
+import { useState } from "react";
 
 function ContactPage({ windowWidth }) {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  // const [errors, setErrors] = useState({});
+
+  const handleFormData = (e) => {
+    // console.log(e.target.name);
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setFormData({ name: "", email: "", phone: "", message: "" });
+  };
+
+  console.log(formData);
+
   return (
     <div className={styles.contactPage}>
       <Header windowWidth={windowWidth} />
@@ -84,17 +106,40 @@ function ContactPage({ windowWidth }) {
               <p>Contact Us</p>
             </div>
             <div className={styles.form}>
-              <form>
+              <form action="https://formspree.io/f/mwplrrkp" method="POST">
                 <input
                   type="text"
                   placeholder="Your name"
                   name="name"
                   required
+                  onChange={handleFormData}
+                  value={formData.name}
                 />
-                <input type="text" placeholder="Email" name="email" required />
-                <input type="phone" placeholder="Phone" name="phone" required />
-                <textarea name="text-area" placeholder="Type your enquiry..." />
-                <button type="submit">Send</button>
+                <input
+                  type="text"
+                  value={formData.email}
+                  onChange={handleFormData}
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
+                <input
+                  type="phone"
+                  value={formData.phone}
+                  onChange={handleFormData}
+                  placeholder="Phone"
+                  name="phone"
+                  required
+                />
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleFormData}
+                  placeholder="Type your enquiry..."
+                />
+                <button onSubmit={handleSubmit} type="submit">
+                  Send
+                </button>
               </form>
             </div>
           </div>
