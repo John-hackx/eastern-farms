@@ -1,0 +1,252 @@
+.contactContainer {
+  border: 1px solid rgb(219, 216, 216);
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 40px;
+  height: 82vh;
+  display: flex;
+  border-radius: 18px;
+}
+
+.left {
+  flex: 0.55;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+.getInTouchContainer {
+  /* border: 1px solid red; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.getInTouchHeader {
+  flex: 0.1;
+  /* border: 1px solid purple; */
+  position: relative;
+}
+.getInTouchHeader p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+.getInTouchHeader span {
+  width: 60px;
+  height: 4px;
+  position: absolute;
+  background-color: #12cc14;
+}
+
+.getInTouchText {
+  flex: 0.2;
+  /* border: 1px solid orange; */
+}
+.getInTouchText p {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  width: 90%;
+  margin-top: 16px;
+}
+
+.getInTouchContact {
+  flex: 0.5;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+}
+.phone {
+  padding-top: 5px;
+  flex: 0.3;
+  /* border: 1px solid seagreen; */
+  display: flex;
+}
+.phone svg {
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #057827;
+  border-radius: 50%;
+  padding: 3px;
+}
+.phoneDetails {
+  display: flex;
+  flex-direction: column;
+}
+.phoneDetailsTitle {
+  font-weight: 600;
+  font-size: 16px !important;
+}
+.phoneDetails p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.9);
+  margin-left: 10px;
+  /* margin-top: 6px; */
+}
+
+.email {
+  flex: 0.3;
+  /* border: 1px solid red; */
+  display: flex;
+  padding-top: 5px;
+}
+.email svg {
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #057827;
+  border-radius: 50%;
+  padding: 3px;
+}
+.emailDetails {
+  display: flex;
+  flex-direction: column;
+}
+.emailDetailsTitle {
+  font-weight: 600;
+  font-size: 16px !important;
+}
+.emailDetails p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.9);
+  margin-left: 10px;
+}
+
+.location {
+  display: flex;
+  flex: 0.4;
+  /* border: 1px solid yellow; */
+}
+.location svg {
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #057827;
+  border-radius: 50%;
+  padding: 3px;
+}
+.locationDetails {
+  display: flex;
+  flex-direction: column;
+}
+.locationDetailsTitle {
+  font-weight: 600;
+  font-size: 16px !important;
+}
+.locationDetails p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.9);
+  margin-left: 10px;
+}
+
+.getInTouchSocial {
+  flex: 0.2;
+  /* border: 1px solid green; */
+  display: flex;
+  padding-top: 20px;
+  gap: 10px;
+}
+.getInTouchSocial img {
+  width: 30px;
+  height: 30px;
+}
+
+.right {
+  flex: 0.45;
+  background-color: #057827;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  padding-top: 30px;
+}
+
+.contactFormContainer {
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+.formTitle {
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+}
+.formTitle p {
+  font-weight: 600;
+  color: #ffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.form {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form {
+  margin-top: 20px;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form form input {
+  border-radius: 20px;
+  background: none;
+  color: #dfdddd;
+  outline: none;
+  border: 1px solid #dfdddd;
+  height: 36px;
+  transition: yellow 0.3s ease-in-out;
+  font-size: 15px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  padding-left: 20px;
+}
+.form form input:focus {
+  border-color: #2fe20c;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+.form form input::placeholder {
+  color: rgb(230, 229, 229); /* Change text color */
+  font-style: italic; /* Make it italic */
+  opacity: 0.7;
+}
+
+form textarea {
+  height: 180px;
+  border-radius: 15px;
+  padding: 15px;
+  background: none;
+  border: 1px solid #dfdddd;
+  outline: none;
+  font-size: 16px;
+  color: #dfdddd;
+}
+form textarea::placeholder {
+  color: #ffff;
+  opacity: 0.5;
+}
+form textarea:focus {
+  border-color: #2fe20c;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+form button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  color: #057827;
+  border-radius: 25px;
+  background-color: #e6e6e6;
+  font-size: 16px;
+  margin-top: -15px;
+}
+
+form button:hover {
+  border-color: #2fe20c;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+  background-color: #56f559;
+  color: rgb(97, 2, 18);
+  cursor: pointer;
+}
