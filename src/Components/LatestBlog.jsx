@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import styles from "./LatestBlog.module.css";
-import blogImage1 from "../assets/images/cocoa.jpg";
-import blogImage2 from "../assets/images/eggs.jpg";
+import blogImage1 from "../assets/images-new/cocoa.jpg";
+import blogImage2 from "../assets/images-new/eggs.jpg";
 
 function LatestBlog() {
   return (

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import styles from "./AboutPage.module.css";
 import Header from "../Components/Header";
-import aboutImage from "../assets/images/about-image 4.jpg";
+import aboutImage from "../assets/images-new/about-image 4.jpg";
 import clsx from "clsx";
 import LatestBlog from "../Components/LatestBlog";
 import Footer from "../Components/Footer";

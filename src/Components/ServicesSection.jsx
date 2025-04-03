@@ -1,9 +1,9 @@
 import Service from "./Service";
 import styles from "./ServicesSection.module.css";
-import serviceImage1 from "../assets/images/service-1.jpg";
-import serviceImage2 from "../assets/images/service-2.jpg";
-import serviceImage3 from "../assets/images/service-3.jpg";
-import serviceImage4 from "../assets/images/service-4.jpg";
+import serviceImage1 from "../assets/images-new/service-1.jpg";
+import serviceImage2 from "../assets/images-new/service-2.jpg";
+import serviceImage3 from "../assets/images-new/service-3.jpg";
+import serviceImage4 from "../assets/images-new/service-4.jpg";
 
 const services = [
   {

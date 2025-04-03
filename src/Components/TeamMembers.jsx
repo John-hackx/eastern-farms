@@ -1,9 +1,9 @@
 import clsx from "clsx";
 import styles from "./TeamMembers.module.css";
-import memberImage1 from "../assets/images/member-1.jpg";
-import memberImage2 from "../assets/images/member-2.jpg";
-import memberImage3 from "../assets/images/member-3.jpg";
-import memberImage4 from "../assets/images/member-4.jpg";
+import memberImage1 from "../assets/images-new/member-1.jpg";
+import memberImage2 from "../assets/images-new/member-2.jpg";
+import memberImage3 from "../assets/images-new/member-3.jpg";
+import memberImage4 from "../assets/images-new/member-4.jpg";
 
 const members = [
   {

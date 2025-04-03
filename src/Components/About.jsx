@@ -1,5 +1,5 @@
 import styles from "./About.module.css";
-import aboutImage from "../assets/images/about-image3.jpg";
+import aboutImage from "../assets/images-new/about-image3.jpg";
 import { Link } from "react-router-dom";
 
 function About() {

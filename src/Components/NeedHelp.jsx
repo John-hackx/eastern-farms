@@ -1,5 +1,5 @@
 import styles from "./NeedHelp.module.css";
-import helpImage from "../assets/images/service-2-new.jpg";
+import helpImage from "../assets/images-new/service-2-new.jpg";
 import { Link } from "react-router-dom";
 
 import { motion } from "framer-motion";

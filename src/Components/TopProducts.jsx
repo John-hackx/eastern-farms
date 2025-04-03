@@ -1,11 +1,11 @@
 import Product from "./Product";
 import styles from "./TopProducts.module.css";
-import cocoaImage from "../assets/images/cocoa.jpg";
-import cornImage from "../assets/images/corn.jpg";
-import eggsImage from "../assets/images/eggs.jpg";
+import cocoaImage from "../assets/images-new/cocoa.jpg";
+import cornImage from "../assets/images-new/corn.jpg";
+import eggsImage from "../assets/images-new/eggs.jpg";
 // import fruitsImage from "../assets/images/fruits.jpg";
-import riceImage from "../assets/images/rice.jpg";
-import wheatImage from "../assets/images/wheat.jpg";
+import riceImage from "../assets/images-new/rice.jpg";
+import wheatImage from "../assets/images-new/wheat.jpg";
 
 const productImages = [
   { image: cocoaImage, name: "Cocoa" },
