@@ -1,10 +1,11 @@
 .projectsContainer {
   /* border: 1px solid red; */
-  height: 150vh;
+  height: 180vh;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   padding-top: 10px;
+  /* margin-bottom: 30px; */
 }
 
 .projectsHeader {
@@ -61,17 +62,18 @@
   /* border: 1px solid red; */
   padding-top: 10px;
   padding-bottom: 20px;
-  height: 100%;
+  height: 96%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   row-gap: 10px;
-  column-gap: 50px;
+  column-gap: 40px;
 }
 
 .projectCard {
   border: 1px solid rgb(209, 208, 208);
   border-radius: 15px;
+  background-color: #ffff;
   display: flex;
   flex-direction: column;
 }
@@ -154,4 +156,50 @@
 .date p {
   font-size: 14px;
   color: #044301;
+}
+
+/* Mobile view */
+
+@media screen and (max-width: 768px) {
+  .projectsHeader {
+    /* border: 1px solid red; */
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .headerLeft p {
+    font-size: 14px;
+  }
+  .headerLeft h3 {
+    width: 90%;
+    font-size: 22px;
+    /* font-family: "Roboto", sans-serif; */
+  }
+
+  .headerRight {
+    /* border: 1px solid red; */
+    justify-content: flex-start;
+    gap: 5px;
+    margin-top: 30px;
+  }
+  .headerRight img {
+    width: 25px;
+    height: 25px;
+  }
+  .projectsContainer {
+    margin-bottom: 400%;
+  }
+  .projectsContent {
+    margin-top: 30px;
+    /* border: 1px solid red; */
+  }
+  .projectsContentContainer {
+    padding-left: 10px;
+    height: 100%;
+    padding-right: 10px;
+  }
+  .projectsContentSubContainer {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
 }
