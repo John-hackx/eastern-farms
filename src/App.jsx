@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PageNotFound from "./Pages/PageNotFound";
 import AboutPage from "./Pages/AboutPage";
 import { useEffect, useState } from "react";
+import ScrollTo from "./ScrollTo";
 
 export default function App() {
   const [windowWidth, setWindowWidth] = useState(() => window.innerWidth);
@@ -23,6 +24,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
+      <ScrollTo />
       <Routes>
         <Route path="/" element={<HomePage windowWidth={windowWidth} />} />
         <Route path="blog" element={<BlogPage windowWidth={windowWidth} />} />
